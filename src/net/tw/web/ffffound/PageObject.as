@@ -27,8 +27,7 @@ package net.tw.web.ffffound {
 					dispatchEvent(new FFFFoundEvent(eventType));
 				});
 				_loader.load(_request);
-			}
-			else {
+			} else {
 				dispatchEvent(new FFFFoundEvent(eventType));
 			}
 		}
