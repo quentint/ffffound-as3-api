@@ -15,4 +15,16 @@
 		<nature>com.adobe.flexbuilder.project.flexlibnature</nature>
 		<nature>com.adobe.flexbuilder.project.actionscriptnature</nature>
 	</natures>
+	<linkedResources>
+		<link>
+			<name>[source path] as3corelib-src</name>
+			<type>2</type>
+			<location>C:/as3/git/as3corelib/src</location>
+		</link>
+		<link>
+			<name>[source path] as3syndicationlib-src</name>
+			<type>2</type>
+			<location>C:/as3/svn/as3syndicationlib/src</location>
+		</link>
+	</linkedResources>
 </projectDescription>

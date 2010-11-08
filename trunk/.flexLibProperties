@@ -1,6 +1,16 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<flexLibProperties version="1">
-<includeClasses/>
-<includeResources/>
-<namespaceManifests/>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<flexLibProperties includeAllClasses="false" version="1">
+  <includeClasses>
+    <classEntry path="net.tw.web.ffffound.FFFFoundEvent"/>
+    <classEntry path="net.tw.web.ffffound.Feed"/>
+    <classEntry path="net.tw.web.ffffound.FeedLoader"/>
+    <classEntry path="net.tw.web.ffffound.Find"/>
+    <classEntry path="net.tw.web.ffffound.Heart"/>
+    <classEntry path="net.tw.web.ffffound.Item"/>
+    <classEntry path="net.tw.web.ffffound.PageObject"/>
+    <classEntry path="net.tw.web.ffffound.Session"/>
+    <classEntry path="net.tw.web.ffffound.User"/>
+  </includeClasses>
+  <includeResources/>
+  <namespaceManifests/>
 </flexLibProperties>

@@ -57,7 +57,7 @@ package net.tw.web.ffffound {
 		 * This will load the next page based on the current offset and the items per page
 		 */
 		public function loadNextPage():void {
-			if (_userName==User.EVERYONE) return; 
+			//if (_userName==User.EVERYONE) return; 
 			_offset+=ITEMS_PER_PAGE;
 			loadFeed();
 		}
@@ -96,7 +96,8 @@ package net.tw.web.ffffound {
 		 * See constructor for params
 		 */
 		public static function getURL(userName:String, type:String=null, offset:int=0):String {
-			if (userName==User.EVERYONE) return "http://feeds.feedburner.com/ffffound/everyone";
+			//if (userName==User.EVERYONE) return "http://feeds.feedburner.com/ffffound/everyone";
+			if (userName==User.EVERYONE) return "http://ffffound.com/feed?offset="+offset;
 			if (type==null) type=FEED_TYPE_FOUND; 
 			return "http://ffffound.com/home/"+userName+"/"+type+"/feed?offset="+offset;
 		}
