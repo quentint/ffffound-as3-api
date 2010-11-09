@@ -1,6 +1,7 @@
 package net.tw.web.ffffound {
 	import com.adobe.xml.syndication.generic.RSS20Item;
 	import com.adobe.xml.syndication.rss.Item20;
+	
 	import flash.events.Event;
 	import flash.net.*;
 	/**
@@ -47,6 +48,9 @@ package net.tw.web.ffffound {
 		protected var _userNames:Array;
 		//
 		private static var _items:Array;
+		//
+		public static const MAX_THUMBNAIL_DIMENSION:uint=160;
+		public static const MAX_MEDIA_DIMENSION:uint=480;
 		//
 		private static const mediaNS:Namespace=new Namespace("http://search.yahoo.com/mrss/");
 		private static const atomNS:Namespace=new Namespace("http://www.w3.org/2005/Atom");
