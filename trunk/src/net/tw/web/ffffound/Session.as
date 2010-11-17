@@ -24,9 +24,9 @@
 		/**
 		 * Parameters should be self-explanatory
 		 */
-		public function Session(userName:String, pass:String) {
-			_userName=userName;
-			_pass=pass;
+		public function Session($userName:String, $pass:String) {
+			_userName=$userName;
+			_pass=$pass;
 			addEventListener(Event.COMPLETE, onLog);
 		}
 		/**
@@ -84,6 +84,11 @@
 		public function get user_id():String {
 			return data.user_id;
 		}
+		public function dispose():void {
+			removeEventListener(Event.COMPLETE, onLog);
+			_userName=null;
+			_pass=null;
+		}
 		/**
 		 * Use it as a shortcut to post images
 		 */
@@ -103,7 +108,7 @@
 			return _pass;
 		}
 		public function get user():User {
-			return new User(userName);
+			return User.getFromName(userName);
 		}
 	}
 }
